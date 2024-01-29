@@ -18,7 +18,7 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "PromotionCom")
+@Table(name = "promotion_com")
 @Entity
 public class PromotionCom {
 
@@ -29,7 +29,7 @@ public class PromotionCom {
     private double pourcentage;
     private Date dateDebut;
     private Date dateFin;
-    private int rank;
+    private int _rank_;
 
     @ManyToOne
     @JoinColumn(name = "IdConcierge")

@@ -24,12 +24,12 @@ public class PromotionItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idPromotion;
+    private int idPromotion;
 
     private double montant;
     private Date dateDebut;
     private Date dateFin;
-    private int rank;
+    private int _rank_;
 
     @ManyToOne
     @JoinColumn(name = "IdConcierge")

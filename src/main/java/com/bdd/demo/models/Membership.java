@@ -28,7 +28,7 @@ public class Membership {
     private Long idMembership;
 
     @Enumerated(EnumType.STRING)
-    private RankEnum rank;
+    private RankEnum _rank_;
 
     @ManyToOne
     @JoinColumn(name = "CodeClient")
