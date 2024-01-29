@@ -26,9 +26,9 @@ public class ClientControllerAdm {
     @GetMapping("/clients")
     public String listClients(Model model) {
         List<ClientDto> clients = clientService.listClients();
-        System.out.println("clients: " + clients.size());
         model.addAttribute("clients_data", clients.size());
-        return "listClients";
-    
+        return "listClients";    
 }
+
+
 }

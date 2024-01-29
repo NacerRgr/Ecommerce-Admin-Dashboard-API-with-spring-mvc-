@@ -17,6 +17,7 @@ public class Item {
     private String categorie;
     private double prix;
     private int quantiteEnStock;
+    private boolean cadeau;
 
     // Constructors, getters, and setters
 }
