@@ -32,7 +32,7 @@ public class Client {
     private String instagram;
     private String phone;
     private String email;
-
+    private String password;
 
     @OneToMany(mappedBy = "client")
     private List<Payment> payments;
