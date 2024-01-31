@@ -44,6 +44,35 @@ public class Client_ServiceImpl implements client_service{
     }
 
 
+    @Override
+    public void deleteClientById(int id) {
+        clientRepository.deleteById(id);
+    }
+
+
+    @Override
+    public ClientDto getClientById(int id) {
+       Client client = clientRepository.findById(id).get();
+       ClientDto clientDto =  ClientDto.builder().id(client.getCodeClient()).nom(client.getNomClient()).email(client.getEmail()).phone(client.getPhone()).facebook(client.getFacebook()).build();
+         return clientDto;
+    }
+
+
+    @Override
+    public void saveClient(ClientDto client) {
+        // TODO Auto-generated method stub
+        Client client_ = clientRepository.findByCodeClient(client.getId()).get();
+        client_.setEmail(client.getEmail());
+        client_.setFacebook(client.getFacebook());
+        client_.setNomClient(client.getNom());
+        client_.setPhone(client.getPhone());
+        clientRepository.save(client_);
+
+    }
+
+
+  
+
    
     
 }

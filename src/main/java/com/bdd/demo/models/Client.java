@@ -2,6 +2,7 @@ package com.bdd.demo.models;
 
 import java.util.List;
 
+import groovy.transform.builder.Builder;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,6 +16,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Entity
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "Client")
@@ -42,6 +44,11 @@ public class Client {
 
     @OneToMany(mappedBy = "client")
     private List<Commande> commandes;
+
+    public static Object builder() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'builder'");
+    }
 
     // Constructors, getters, and setters
 }

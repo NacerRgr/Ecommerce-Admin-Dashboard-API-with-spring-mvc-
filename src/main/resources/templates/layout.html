@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html 
+xmlns:th="http://thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+xmlns:sec="http://www.thymeleaf.org"
+>
+<head th:fragment="header">
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">Admin Dashboard</title>
+
+<style type="text/css">
+  body {
+    background-color: #E9F3F9;
+    margin: 0;
+    position: relative;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .search {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 65%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .search div {
+    display: inline-block;
+  }
+  
+  div>a {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .cartesFlex {
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  form>div {
+    margin: 10px;
+  }
+  
+  .font {
+    font-size: 2rem;
+    font-family: 'Russo One', sans-serif;
+  }
+  .center_div{
+    margin : auto;
+    width: 80%;
+  }
+  </style>
+</head>
+
+
+<body>
+    
+  
+    <div layout:fragment="content">
+        
+
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
